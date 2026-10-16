@@ -111,6 +111,7 @@
       background: linear-gradient(135deg, var(--rose-deep), #b35bd6);
       box-shadow: 0 10px 26px rgba(217, 102, 138, 0.38);
       margin-top: 24px;
+      text-decoration: none;
       transition: transform 0.15s;
     }
     .btn:active { transform: scale(0.96); }
@@ -335,8 +336,9 @@
     .song .note { font-size: 0.82rem; color: var(--muted); font-style: italic; margin-top: 3px; line-height: 1.4; }
 
     .photos { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 22px 0 4px; }
-    .polaroid { background: #fff; padding: 8px 8px 26px; border-radius: 4px; box-shadow: 0 12px 26px rgba(0,0,0,0.4); width: 128px; color: var(--ink); font: 600 0.95rem 'Dancing Script', cursive; }
-    .polaroid img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; border-radius: 2px; margin-bottom: 5px; }
+    .polaroid { background: #fff; padding: 10px 10px 14px; border-radius: 4px; box-shadow: 0 16px 34px rgba(0,0,0,0.45); width: min(220px, 60vw); color: var(--ink); font: 700 1.15rem 'Dancing Script', cursive; }
+    .polaroid img { width: 100%; height: auto; display: block; border-radius: 2px; margin-bottom: 8px; }
+    .photos:has(.polaroid:only-child) .polaroid { transform: rotate(-2deg); }
     .polaroid:nth-child(odd) { transform: rotate(-4deg); }
     .polaroid:nth-child(even) { transform: rotate(3deg); }
 
@@ -520,7 +522,7 @@
       signature: "Con cariño, Dave",
       // Número de WhatsApp de Dave con código de país, solo dígitos (ej. "5215512345678").
       // Si se deja vacío, se oculta el botón de responder.
-      whatsapp: "",
+      whatsapp: "59175097701",
       replyText: "Dave, acabo de ver mi regalo 🤍",
 
       songs: [
@@ -594,7 +596,7 @@
       closing: "Dada la inmensidad del tiempo y del universo, qué alegría compartir planeta y tiempo contigo.",
 
       // Fotos opcionales para el final: [{ src: "fotos/1.jpg", caption: "texto" }, ...]
-      photos: []
+      photos: [{ src: "fotos/shanel.jpg", caption: "Tú, siendo simplemente tú 🤍" }]
     };
 
     /* =====================================================================
